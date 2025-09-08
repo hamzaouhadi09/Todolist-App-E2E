@@ -1,0 +1,28 @@
+{
+    "validTodos": [
+      "Acheter du café",
+      "Faire les courses", 
+      "Réviser examen",
+      "Appeler le médecin",
+      "Terminer le projet",
+      "Planifier les vacances",
+      "Nettoyer la maison",
+      "Lire un livre",
+      "Faire du sport",
+      "Méditer"
+    ],
+    "invalidTodos": [
+      "",
+      "   ",
+      "Tâche avec caractères #@!%&"
+    ],
+    "specialCharacterTodos": [
+      "Tâche avec émojis 🚀📝",
+      "Task avec accents éàüñ", 
+      "Task with 日本語 characters",
+      "Задача на русском языке"
+    ],
+    "longTodos": [
+      "Cette tâche est intentionnellement très longue pour tester le comportement de l'application avec des textes de taille importante et voir comment elle gère l'affichage et le responsive design sur différentes tailles d'écran"
+    ]
+  }
