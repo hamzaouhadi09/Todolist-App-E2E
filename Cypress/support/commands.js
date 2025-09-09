@@ -27,23 +27,3 @@ Cypress.Commands.add('addTodoUpdated', (todoText) => {
     }
   })
   
-  // Exemple avec commandes personnalisées
-  describe('Tests avec commandes personnalisées', () => {
-    beforeEach(() => {
-      cy.visit('/')
-      cy.contains('Ma Todo List').should('be.visible')
-    })
-  
-    it('Exemple d\'utilisation des commandes personnalisées', () => {
-      cy.addTodoUpdated('Première tâche')
-      cy.addTodoUpdated('Deuxième tâche')
-      cy.addTodoUpdated('Troisième tâche')
-  
-      cy.toggleTodoUpdated('Première tâche')
-      cy.checkProgressUpdated(1, 3, 33)
-  
-      cy.deleteTodoUpdated('Deuxième tâche')
-      cy.checkProgressUpdated(1, 2, 50)
-    })
-  })
-  
