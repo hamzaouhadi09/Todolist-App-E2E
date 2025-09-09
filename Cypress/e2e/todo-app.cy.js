@@ -1,5 +1,3 @@
-// cypress/e2e/todo-app.cy.js - Version corrigée avec vrais sélecteurs
-
 describe('Todo App - Tests d\'automatisation', () => {
     beforeEach(() => {
       cy.visit('/', {
@@ -8,7 +6,7 @@ describe('Todo App - Tests d\'automatisation', () => {
         retryOnNetworkFailure: true
       })
       
-      // Attendre que l'application soit complètement chargée
+      // Attendre l'application 
       cy.contains('Ma Todo List', { timeout: 20000 }).should('be.visible')
       
       // Vérifier que l'input est prêt
@@ -64,7 +62,7 @@ describe('Todo App - Tests d\'automatisation', () => {
         // Vérifier que le texte est barré
         cy.contains('span', 'Faire les courses').should('have.class', 'line-through')
   
-        // Vérifier le badge "Terminé"
+        // Vérifier le statut terminé
         cy.contains('Terminé').should('be.visible')
   
         // Vérifier la progression
